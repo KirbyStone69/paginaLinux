@@ -45,12 +45,23 @@ body {
   height: auto;
   
 }
-.paca{
-left: 20cm;
+.imagenes {
+  display: flex;
+  justify-content: center;
 }
-.palla{
-right: 20cm;
+
+.image-container {
+  margin: 0 10px; /* Ajusta esta propiedad para controlar el espacio lateral */
+  width: 200px; /* Ancho fijo de cada contenedor de imagen */
+  height: 150px; /* Alto fijo de cada contenedor de imagen */
 }
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Asegura que la imagen ocupe todo el espacio del contenedor */
+}
+
 
     </style>
 </head>
@@ -91,12 +102,15 @@ right: 20cm;
 
 
 
-      <div class="container">
-        <div class="contenido">
-          <div class="paca"><img src="paca.png" href=""></div> 
-         <div class="palla"><img src="palla.png" href=""></div>    
-        </div>
-      </div>
+<div class="imagenes">
+  <div class="image-container">
+    <img src="paca.png">
+  </div>
+  <div class="image-container">
+    <img src="palla.png">
+  </div>
+</div>
+
 
 </body>
 </html>
