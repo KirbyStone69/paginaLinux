@@ -51,7 +51,7 @@ body {
 }
 
 .image-container {
-  margin: 0 300px; /* Ajusta esta propiedad para controlar el espacio lateral */
+  margin: 0 250px; /* Ajusta esta propiedad para controlar el espacio lateral */
   width: 200px; /* Ancho fijo de cada contenedor de imagen */
   height: 150px; /* Alto fijo de cada contenedor de imagen */
 }
@@ -60,6 +60,18 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover; /* Asegura que la imagen ocupe todo el espacio del contenedor */
+}
+
+.imagen-boton {
+    display: block; 
+    width: 200px; 
+    height: auto; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    cursor: pointer; 
+}
+
+.imagen-boton:hover {
+    transform: scale(1.3);
 }
 
 
@@ -74,7 +86,12 @@ body {
 <p>El software de código abierto se caracteriza por permitir el acceso libre al código fuente, lo que fomenta la colaboración,<br> 
   la innovación y la personalización por parte de los usuarios y desarrolladores. Entre las múltiples plataformas que representan<br> 
   este modelo, Linux destaca como uno de los ejemplos más importantes y exitosos.</p>
-          <center><img src="icon.ico"></center>
+          <center><img src="icon.ico" class="imagen-boton"></center>
+<br>
+<center>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/hZDaS9xyINI?si=9FwOa-7Ae09hlIon" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</center>
+<br>
             <b>Accesibilidad al código fuente:</b>
 <p>
     Una de las principales fortalezas de Linux es que su código está disponible públicamente. Esto permite que cualquier<br> 
@@ -95,6 +112,8 @@ body {
 <b>Seguridad y estabilidad:</b><p>
     La revisión constante del código por parte de la comunidad hace que Linux sea un sistema operativo altamente seguro y estable. 
     Las vulnerabilidades se detectan y corrigen rápidamente.</p>          
+    <br>
+    <center><img src="aquiconmicompaelputricio.gif" class="imagen-boton"></center>
 </div>
 </div>
 
@@ -104,12 +123,15 @@ body {
 
 <div class="imagenes">
   <div class="image-container">
-    <img src="paca.png">
+
   </div>
   <div class="image-container">
-    <img src="palla.png">
+    <a href="pagina2.html">
+        <img src="palla.png" class="imagen-boton">
+    </a>
   </div>
 </div>
+
 
 
 </body>
